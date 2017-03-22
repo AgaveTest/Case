@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datasources>
+	<datasource name="DataTable">
+		<type>data</type>
+		<parserclass>main.java.com.agave.data.ReadDataTable</parserclass>
+		<!--考虑是否有必要后续补充标签替换类中常量<defaultpath></defaultpath>-->
+	</datasource>
+	<datasource name="RestModel">
+		<type>model</type>
+		<parserclass>main.java.com.agave.model.rest.ReadRestXML</parserclass>
+	</datasource>
+</datasources>

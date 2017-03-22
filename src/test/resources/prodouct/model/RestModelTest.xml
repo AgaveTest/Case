@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<models>
+	<model type="rest" name="Jenkins-getjob1" url="http://localhost:9090/job/testng001/api/json?pretty=true" httpmodel="get">
+		<send>
+			<head>head1</head>
+			<parm>parm1</parm>
+		</send>
+		<returndatas>
+			<returndata name="displayName" type="string">//displayName</returndata>
+			<returndata name="builds" type="list">//builds</returndata>
+		</returndatas>
+	</model>
+	<model type="rest" name="Jenkins-getjob2" url="http://localhost:9090/job/testng001/api/json?pretty=true" httpmodel="get">
+		<send>
+			<head>head2</head>
+			<parm>parm2</parm>
+		</send>
+		<returndatas>
+			<returndata name="displayName" type="string">//displayName</returndata>
+			<returndata name="builds" type="list">//builds</returndata>
+		</returndatas>
+	</model>
+	<model type="rest" name="Jenkins-getjob3" url="http://localhost:9090/job/testng001/api/json?pretty=true" httpmodel="get">
+		<send>
+			<head></head>
+			<parm></parm>
+		</send>
+		<returndatas>
+			<returndata name="displayName" type="string">//displayName</returndata>
+			<returndata name="builds" type="list">//builds</returndata>
+		</returndatas>
+	</model>
+</models>

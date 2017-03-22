@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<models>
+	<model name="Baidu" type="gui">
+		<element name="wd"  type="input"> 
+			<location type="id" driver="web">kw</location>
+		</element>
+		<element name="su"  type="button"> 
+			<location type="id" driver="web">su</location>
+		</element>
+	</model>
+	<model name="Baidu_fail" type="gui">
+		<element name="wd"  type="input"> 
+			<location type="id" driver="web">kw1</location>
+		</element>
+		<element name="su"  type="button"> 
+			<location type="id" driver="web">su1</location>
+		</element>
+	</model>
+	<model name="Angular_sort" type="gui">
+		<element name="input_text"  type="input"> 
+			<location type="id" driver="web">input_text</location>
+		</element>
+		<element name="input_button"  type="button"> 
+			<location type="id" driver="web">input_button</location>
+		</element>
+		<element name="checkbox" type="button">
+			<location type="xpath" driver="web">.//*[text()="?"]/parent::*/td/input</location>
+		</element>
+		
+	</model>
+</models>

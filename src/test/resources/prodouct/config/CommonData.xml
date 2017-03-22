@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datas>
+	<!--CommondDataTest data-->
+	<suit name="DBdata" type="DB">
+		<data name="db_rul" >192.168.0.1</data>
+		<data name="db_password" >qwerty</data>
+		<data name="db_type">mysql</data>
+	</suit>
+	<suit name="Gui_dfl_Value" type="gui">
+		<data name="url" >http://www.baidu.com</data>
+		<data name="browsertype" >firefox</data>
+	</suit>
+	<!-- 全局执行的等待时间 可通过增加data 增加对应的驱动的执行等待时间-->
+	<suit name="WaitTime" type="comm">
+		<data name="dafult_wtime">1000</data>
+		<data name="SendTars_space">1000</data><!-- case发送速度控制 -->
+	</suit>
+	<suit name="TARS" type="tarsconf">
+		<data name="Tarsip">127.0.0.1</data>
+		<data name="Tarsport">7988</data>
+	</suit>
+    <!-- 对应类型的kipp是否sid，如果设置只有sid相同的kipp执行测试用例 -->
+	<suit name="KIPPDATA" type="rest">
+		<!-- 固定模式driver，每一个类型的rest只能有一个 text 为kipp的sid-->
+		<data name="kippsid">onekipps001</data>
+		<!-- <data name="kippsid">onekipps002</data>
+ -->	</suit>
+	<suit name=" " type="gui">
+		<!-- 固定模式driver，每一个类型的rest只能有一个 text 为kipp的sid-->
+		<data name="kippsid">guikipp001</data>
+		<data name="kippsid">onekipps004</data>
+	</suit>
+</datas>

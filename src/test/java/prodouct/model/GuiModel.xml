@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<models>
+	<model name="Login" type="gui">
+		<element name="username"  type="input"> 
+			<location type="name" driver="web">yhMc</location>
+			<location type="xpath" driver="web">//input\[@name=\'yhMc\'\]</location>
+			<location type="id" driver="web">yhMc</location>
+		</element>
+		<element name="passwd"  type="input"> 
+			<location type="xpath" driver="web">//input\[@name=\'yhMm\'\]</location>
+		</element>
+		<element name="loginBtn"  type="button"> 
+			<location type="xpath" driver="web">//input\[@class=\'loginbtn\'\]</location>
+		</element>
+	</model>
+	<model name="Logout" type="gui">
+		<element name="loginout"  type="button"> 
+			<location type="id" driver="web">loginout</location>
+		</element>
+		<element name="closeAlert"  type="button"> 
+			<location type="xpath" driver="web">//span\[text()=\'确定\'\]</location>
+		</element>
+	</model>
+		<model name="menu_sys_manager" type="gui">
+		<element name="sysManager"  type="button"> 
+			<location type="xpath" driver="web">//div\[@id=\'rootMenu\'\]/div/div/div\[text()=\'系统管理\'\]</location>
+		</element>
+		<element name="menuManager"  type="button"> 
+			<location type="xpath" driver="web">//span\[text()=\'菜单管理\'\]</location>
+		</element>		
+		<element name="userManager"  type="button"> 
+			<location type="xpath" driver="web">//span\[text()=\'用户管理\'\]</location>
+		</element>
+		<element name="charactorManager"  type="button"> 
+			<location type="xpath" driver="web">//span\[text()=\'角色管理\'\]</location>
+		</element>
+		<element name="partClaffManager"  type="button"> 
+			<location type="xpath" driver="web">//span\[text()=\'部门员工管理\'\]</location>
+		</element>
+		<element name="stationManager"  type="button"> 
+			<location type="xpath" driver="web">//span\[text()=\'岗位管理\'\]</location>
+		</element>
+	</model>
+	<model name="add_delete_charactor" type="gui">
+		<element name="username"  type="input"> 
+			<location type="name" driver="web">yhMc</location>
+			<location type="xpath" driver="web">//input\[@name=\'yhMc\'\]</location>
+			<location type="id" driver="web">yhMc</location>
+		</element>
+		<element name="passwd"  type="input"> 
+			<location type="xpath" driver="web">//input\[@name=\'yhMm\'\]</location>
+		</element>
+		<element name="loginBtn"  type="button"> 
+			<location type="xpath" driver="web">//input\[@class=\'loginbtn\'\]</location>
+		</element>
+		<element name="sysManager"  type="button"> 
+			<location type="xpath" driver="web">//div\[@id=\'rootMenu\'\]/div/div/div\[text()=\'系统管理\'\]</location>
+		</element>
+		<element name="charactorManager"  type="button"> 
+			<location type="xpath" driver="web">//span\[text()=\'角色管理\'\]</location>
+		</element>
+		<element name="newCharactor"  type="button"> 
+			<location type="xpath" driver="web">//span\[text()=\'新增角色\'\]</location>
+		</element>
+		<element name="newCharactorName"  type="input"> 
+			<location type="xpath" driver="web">//form\[@id=\'newRoleForm\'\]/table/tbody/tr\[1\]/td\[2\]/input</location>
+		</element>
+		<element name="newCharactorDescriber"  type="input"> 
+			<location type="xpath" driver="web">//form\[@id=\'newRoleForm\'\]/table/tbody/tr\[2\]/td\[2\]/input</location>
+		</element>
+		<element name="save"  type="button"> 
+			<location type="xpath" driver="web">//span\[text()=\'保存\'\]</location>
+		</element>
+		<element name="ConfirmModify"  type="button"> 
+			<location type="xpath" driver="web">//span\[text()=\'确定\'\]</location>
+		</element>
+		<element name="getCharator"  type="table"> 
+			<location type="xpath" driver="web">//div\[@class=\'datagrid-view2\'\]/div\[@class=\'datagrid-body\'\]/table\[@class=\'datagrid-btable\'\]/tbody/tr${replase}/td\[1\]/div\[text()=\'test\'\]</location>
+		</element>
+		<element name="deleteCharator"  type="button"> 
+			<location type="xpath" driver="web">//span\[text()=\'删除角色\'\]</location>
+		</element>
+		<element name="ConfirmDelete"  type="button"> 
+			<location type="xpath" driver="web">//span\[text()=\'确定\'\]</location>
+		</element>
+		<element name="ConfirmDelete2"  type="button"> 
+			<location type="xpath" driver="web">//span\[text()=\'确定\'\]</location>
+		</element>
+		<element name="loginout"  type="button"> 
+			<location type="id" driver="web">loginout</location>
+		</element>
+		<element name="closeAlert"  type="button"> 
+			<location type="xpath" driver="web">//span\[text()=\'确定\'\]</location>
+		</element>
+	</model>
+	<model name="modify_charactor" type="gui">
+		<element name="getCharator"  type="table"> 
+			<location type="xpath" driver="web">//div\[@class=\'datagrid-view2\'\]/div\[@class=\'datagrid-body\'\]/table\[@class=\'datagrid-btable\'\]/tbody/tr${replase}/td\[1\]/div\[text()=\'test\'\]</location>
+		</element>
+		<element name="modifyCharactor"  type="button"> 
+			<location type="xpath" driver="web">//span\[text()=\'编辑角色\'\]</location>
+		</element>
+		<element name="newCharactorName"  type="input"> 
+			<location type="xpath" driver="web">//form\[@id=\'newRoleForm\'\]/table/tbody/tr\[1\]/td\[2\]/input</location>
+		</element>
+		<element name="newCharactorDescriber"  type="input"> 
+			<location type="xpath" driver="web">//form\[@id=\'newRoleForm\'\]/table/tbody/tr\[2\]/td\[2\]/input</location>
+		</element>
+		<element name="save"  type="button"> 
+			<location type="xpath" driver="web">//span\[text()=\'保存\'\]</location>
+		</element>
+		<element name="ConfirmModify"  type="button"> 
+			<location type="xpath" driver="web">//span\[text()=\'确定\'\]</location>
+		</element>
+	</model>
+	<model name="menu_authorization" type="gui">
+		<element name="getCharator"  type="table"> 
+			<location type="xpath" driver="web">//div\[@class=\'datagrid-view2\'\]/div\[@class=\'datagrid-body\'\]/table\[@class=\'datagrid-btable\'\]/tbody/tr${replase}/td\[1\]/div\[text()=\'test\'\]</location>
+		</element>
+		<element name="menuAuthorization"  type="button"> 
+			<location type="xpath" driver="web">//span\[text()=\'菜单授权\'\]</location>
+		</element>
+		<element name="cardManager"  type="button"> 
+			<location type="xpath" driver="web">//span\[text()=\'卡片管理\'\]/parent::div/span\[4\]</location>
+		</element>
+		<element name="checkInManager"  type="button"> 
+			<location type="xpath" driver="web">//span\[text()=\'考勤管理\'\]/parent::div/span\[4\]</location>
+		</element>
+		<element name="sysManager"  type="button"> 
+			<location type="xpath" driver="web">//span\[text()=\'系统管理\'\]/parent::div/span\[4\]</location>
+		</element>
+		<element name="event"  type="button"> 
+			<location type="xpath" driver="web">//span\[text()=\'事件\'\]/parent::div/span\[4\]</location>
+		</element>
+		<element name="deviceManager"  type="button"> 
+			<location type="xpath" driver="web">//span\[text()=\'设备管理\'\]/parent::div/span\[4\]</location>
+		</element>
+		<element name="logManager"  type="button"> 
+			<location type="xpath" driver="web">//span\[text()=\'日志管理\'\]/parent::div/span\[4\]</location>
+		</element>
+		<element name="festivalsManager"  type="button"> 
+			<location type="xpath" driver="web">//span\[text()=\'节假日管理\'\]/parent::div/span\[4\]</location>
+		</element>
+		<element name="authorization"  type="button"> 
+			<location type="xpath" driver="web">//span\[text()=\'授权\'\]</location>
+		</element>
+		<element name="confirm"  type="button"> 
+			<location type="xpath" driver="web">//span\[text()=\'确定\'\]</location>
+		</element>
+	</model>
+	<model name="new_user" type="gui">
+		<element name="searchUserName"  type="input"> 
+			<location type="xpath" driver="web">//input\[@name=\'yhMc\'\]</location>
+		</element>
+		<element name="searchSex"  type="select"> 
+			<location type="xpath" driver="web">//select\[@name=\'xb\'\]</location>
+		</element>
+		<element name="search"  type="button"> 
+			<location type="xpath" driver="web">//span\[text()=\'查询\'\]</location>
+		</element>
+		<element name="getFirstUser"  type="button"> 
+			<location type="id" driver="web">datagrid-row-r1-1-0</location>
+		</element>
+		<element name="modifyUser"  type="button"> 
+			<location type="xpath" driver="web">//span\[text()=\'修改\'\]</location>
+		</element>
+		<element name="modifyPWD"  type="button"> 
+			<location type="xpath" driver="web">//span\[text()=\'修改密码\'\]</location>
+		</element>
+		<element name="pwd"  type="input"> 
+			<location type="id" driver="web">pwd</location>
+		</element>
+		<element name="comfirmPwd"  type="input"> 
+			<location type="id" driver="web">confirmPwd</location>
+		</element>
+		<element name="deleteUser"  type="button"> 
+			<location type="xpath" driver="web">//span\[text()=\'删除\'\]</location>
+		</element>
+		<element name="addUser"  type="button"> 
+			<location type="xpath" driver="web">//span\[text()=\'新增用户\'\]</location>
+		</element>
+		<element name="userCode"  type="input"> 
+			<location type="xpath" driver="web">//input\[@name=\'yhDm\'\]</location>
+		</element>
+		<element name="userName"  type="input"> 
+			<location type="xpath" driver="web">//form\[@id=\'newUserForm\'\]/table/tbody/tr/td\[4\]/input\[@name=\'yhMc\'\]</location>
+		</element>
+		<element name="IDNumber"  type="input"> 
+			<location type="xpath" driver="web">//input\[@name=\'sfzhm\'\]</location>
+		</element>
+		<element name="PhoneNumber"  type="input"> 
+			<location type="xpath" driver="web">//input\[@name=\'sjhm\'\]</location>
+		</element>
+		<element name="selectSex"  type="input"> 
+			<location type="xpath" driver="web">//form\[@id=\'newUserForm\'\]/table/tbody/tr\[3\]/td\[2\]/span/span</location>
+		</element>
+		<element name="selectMan"  type="input"> 
+			<location type="xpath" driver="web">//div\[@value=\'1\'\]</location>
+		</element>
+		<element name="fixedLine"  type="input"> 
+			<location type="xpath" driver="web">//input\[@name=\'gddh\'\]</location>
+		</element>
+		<element name="userCharater"  type="input"> 
+			<location type="xpath" driver="web">//input\[@id=\'jsDm\'\]/parent::td/span/span</location>
+		</element>
+		<element name="selectCharater"  type="input"> 
+			 <!-- <location type="xpath" driver="web">//iframe\[@src=\'/photoncard/user/userAdd.do\'\]/#document/html/body/div\[2\]/div/div\[test()=\'cjp\'\]</location> -->
+			 <location type="xpath" driver="web">//div\[@value=\'A8284100-4567-4F53-83AC-915C32F055CC\'\]</location>
+		</element>
+		<element name="Mac"  type="input"> 
+			<location type="xpath" driver="web">//input\[@name=\'macdz\'\]</location>
+		</element>
+		<element name="IP"  type="input"> 
+			<location type="xpath" driver="web">//input\[@name=\'ipdz\'\]</location>
+		</element>
+		<element name="Email"  type="input"> 
+			<location type="xpath" driver="web">//input\[@name=\'dzyj\'\]</location>
+		</element>
+		<element name="serialNumber"  type="input"> 
+			<location type="xpath" driver="web">//input\[@name=\'xh\'\]</location>
+		</element>
+		<element name="remark"  type="input"> 
+			<location type="xpath" driver="web">//textarea\[@name=\'bz\'\]</location>
+		</element>
+		<element name="save"  type="button"> 
+			<location type="xpath" driver="web">//span\[text()=\'保存\'\]</location>
+		</element>
+		<element name="comfirm"  type="button"> 
+			<location type="xpath" driver="web">//span\[text()=\'确定\'\]</location>
+		</element>
+	</model>
+	<model name="new_card" type="gui">
+		<element name="cardManager"  type="button"> 
+			<location type="xpath" driver="web">//div\[@id=\'rootMenu\'\]/div/div/div\[text()=\'卡片管理\'\]</location>
+		</element>
+		<!-- 
+		<element name="cardInfo"  type="button"> 
+			<location type="xpath" driver="web">//span\[text()=\'卡片信息管理\'\]</location>
+		</element>
+		 -->
+		<element name="getcookies"  type="cookie"> 
+			<location type="xpath" driver="web"></location>
+		</element>
+	</model>
+	<model name="Test" type="gui">
+		<element name="test"  type="button"> 
+<!--			应对多种识别方式如selenium 与图片识别同时存-->
+			<location type="id" driver="web">usernameInput</location>
+		</element>
+	</model>
+</models>

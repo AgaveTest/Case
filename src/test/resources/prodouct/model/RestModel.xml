@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<models>
+	<GlobalData>
+		<data name="host">192.168.210.67</data>
+		<data name="post">8080</data>
+	</GlobalData>
+	<model type="rest" name="jenkinis_copy_project" url="/createItem" httpmodel="POST">
+		<send>
+			<head></head>
+			<parm>{"name":"data","mode":"data","from":"data"}</parm>
+		</send>
+		<returndatas>
+			<returndata ></returndata>
+		</returndatas>
+	</model>
+	<model type="rest" name="hello_model" url="/hello" httpmodel="POST">
+		<send>
+			<head>{"application":"x-www-form-urlencoded"}</head>
+			<parm>{"name":"data","mode":"data","from":"data"}</parm>
+		</send>
+		<returndatas>
+			<returndata ></returndata>
+		</returndatas>
+	</model>
+	<model type="rest" name="test" url="/add" httpmodel="post">
+		<send>
+			<head>httphead:xxx;aaa=aaa</head>
+			<parm>{abc:abcd}</parm>
+		</send>
+		<returndatas>
+			<returndata name="displayName" type="string">//displayName</returndata>
+			<returndata name="builds" type="list">//builds</returndata>
+		</returndatas>
+	</model>
+	<model name="Jenkins-getjob" httpmodel="GET" type="rest" url="/api/json?pretty=true" >
+		<send>
+			<head>{"Content-Type":"application/json"}</head>
+			<parm>{'abc':'abcd'}</parm>
+		</send>
+		<returndatas>
+			<returndata name="url" type="string">//url</returndata>
+			<returndata name="actions" type="list">//actions</returndata>
+		</returndatas>
+	</model>
+	<model name="new_card_data" httpmodel="POST" type="rest" url="/api/json?pretty=true" >
+		<send>
+			<head>{"Content-Type":"application/json"}</head>
+			<parm>{"data":"data","flag":"data"}</parm>
+		</send>
+	</model>
+</models>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<models>
+	<model type="tcp" name="login">
+	    <commands>
+	        <command name="main" encode="Shift"></command>
+	        <command name="second" encode="Shift"></command>
+	    </commands>
+	    <datas>
+	       	<data name="time" encode="False"></data>
+	        <data name="clientType" encode="Shift"></data>
+	        <data name="clientId" encode="Shift"></data>
+	        <data name="username" encode="UnicodeWithLength"></data>
+	        <data name="password" encode="UnicodeWithLength"></data>
+	        <data name="newpassword" encode="UnicodeWithLength"></data>
+	    </datas>
+		<returndatas>
+			<returndata></returndata>
+		</returndatas>
+	</model>
+	<model type="tcp" name="base_data">
+	    <commands>
+	        <command name="main" encode="Shift"></command>
+	        <command name="second" encode="Shift"></command>
+	    </commands>
+	    <datas>
+	       	<data name="obj_type_id" encode="Shift"></data>
+	        <data name="obj_id" encode="Shift"></data>
+	        <data name="obj_type" encode="Shift"></data>
+	        <data name="Description" encode="Json" datatype="String"></data>
+	        <data name="ID" encode="Json" datatype="int"></data>
+	        <data name="Name" encode="Json"></data>
+	        <data name="ObjectNo" encode="Json"></data>
+	        <data name="ObjectType" encode="Json" datatype="int"></data>
+	        <data name="ParentID" encode="Json" datatype="int"></data>
+	        <data name="ParentType" encode="Json" datatype="int"></data>
+	        <data name="Status" encode="Json" datatype="int"></data>
+	        <data name="Address" encode="Json"></data>
+	        <data name="Email" encode="Json"></data>
+	        <data name="Fax" encode="Json"></data>
+	        <data name="OrgCode" encode="Json"></data>
+	        <data name="Tel" encode="Json"></data>
+	       	<data name="Age" encode="Json"></data>
+	       	<data name="BornTime" encode="Json"></data>
+	       	<data name="IDNumber" encode="Json"></data>
+	       	<data name="Mobile" encode="Json"></data>
+	       	<data name="Photo" encode="Json"></data>
+	       	<data name="Sex" encode="Json"></data>
+	       	<data name="WorkNo" encode="Json"></data>
+	       	<data name="WorkState" encode="Json" datatype="int"></data>
+	        <data name="ElectronicMap" encode="Json"></data>
+	        <data name="LstDevice" encode="Json"></data>
+	        <data name="PhotoId" encode="Json" datatype="int"></data>
+	    </datas>
+		<returndatas>
+			<returndata></returndata>
+		</returndatas>
+	</model>
+	<model type="tcp" name="inssue_card">
+	    <commands>
+	        <command name="main" encode="Shift"></command>
+	        <command name="second" encode="Shift"></command>
+	    </commands>
+	    <datas>
+	       	<data name="PersonID" encode="Shift"></data>
+	        <data name="CardNum" encode="Shift"></data>
+	       	<data name="CardType" encode="Shift"></data>
+	       	<data name="CardNum1" encode="Shift"></data>
+	        <data name="CardStatus" encode="Shift"></data>
+	       	<data name="StartTime" encode="Shift"></data>
+	        <data name="EndTime" encode="Shift"></data>
+	    </datas>
+		<returndatas>
+			<returndata></returndata>
+		</returndatas>
+	</model>
+	<model type="udp" name="test_upd">
+	    <datas>
+	       	<data name="card"></data>
+	        <data name="record"></data>
+	       	<data name="macAddress"></data>
+	       	<data name="doorNo"></data>
+	        <data name="eventType"></data>
+	    </datas>
+		<returndatas>
+			<returndata></returndata>
+		</returndatas>
+	</model>
+</models>	

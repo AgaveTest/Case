@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datas>
+	<!--CommondDataTest data-->
+	<suit name="DBdata" type="DB">
+		<data name="dafult_url" >http://www.baidu.com</data>
+		<data name="dafult_waittime" >1000</data>
+		<data name="db_rul" >192.168.0.1</data>
+		<data name="db_password" >qwerty</data>
+		<data name="type">mysql</data>
+	</suit>
+	
+		<suit name="CJSDATA" type="default">
+		<data name="dafult_url" >http://www.baidu.com</data>
+		<data name="dafult_waittime" >1000</data>
+		<data name="db_rul" >192.168.0.1</data>
+		<data name="db_password" >qwerty</data>
+		<data name="type">mysql</data>
+	</suit>
+	
+</datas>
